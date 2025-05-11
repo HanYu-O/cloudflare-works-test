@@ -137,5 +137,5 @@ dist
 
 # Cloudflare Workers development
 .dev.vars
-wrangler.toml
+# wrangler.toml.example
 .cursorignore

@@ -6,9 +6,9 @@
   "packageManager": "yarn@4.5.0",
   "scripts": {
     "dev": "wrangler dev",
-    "deploy": "wrangler publish",
-    "init": "wrangler init",
-    "build": "yarn install"
+    "deploy": "wrangler deploy",
+    "build": "yarn install",
+    "init": "wrangler init"
   },
   "repository": {
     "type": "git",

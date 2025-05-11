@@ -3,6 +3,7 @@ main = "src/handler.ts"
 compatibility_date = "2023-01-01"
 
 [vars]
+# 开发时的默认值，生产环境请在 Cloudflare Dashboard 中设置
 OPENROUTER_API_KEY = ""  # 开发时的默认值
 APP_REFERER = ""  # 你的域名
 APP_TITLE = ""    # 你的应用名称
