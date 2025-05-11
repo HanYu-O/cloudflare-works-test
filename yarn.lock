@@ -357,18 +357,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-yoga/common@npm:^3.9.1":
-  version: 3.9.1
-  resolution: "@graphql-yoga/common@npm:3.9.1"
-  dependencies:
-    graphql-yoga: "npm:3.9.1"
-    tslib: "npm:^2.3.1"
-  peerDependencies:
-    graphql: ^15.2.0 || ^16.0.0
-  checksum: 10c0/6f2f59a7f9da09cdf0d9ea0ee4757064f0c6db748d5a474d0b0ba7efee53903b99f17d5c1401af0f4f5183bc30ac93c4232fe6d862b8e538421835db653af962
-  languageName: node
-  linkType: hard
-
 "@graphql-yoga/logger@npm:^0.0.1":
   version: 0.0.1
   resolution: "@graphql-yoga/logger@npm:0.0.1"
@@ -954,8 +942,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "cloudflare-works-test@workspace:."
   dependencies:
-    "@graphql-yoga/common": "npm:^3.9.1"
     graphql: "npm:^16.11.0"
+    graphql-yoga: "npm:^3.9.1"
     openai: "npm:^4.98.0"
     wrangler: "npm:^4.14.4"
   languageName: unknown
@@ -1461,7 +1449,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql-yoga@npm:3.9.1":
+"graphql-yoga@npm:^3.9.1":
   version: 3.9.1
   resolution: "graphql-yoga@npm:3.9.1"
   dependencies:

@@ -25,8 +25,8 @@
   },
   "homepage": "https://github.com/HanYu-O/cloudflare-works-test#readme",
   "devDependencies": {
-    "@graphql-yoga/common": "^3.9.1",
     "graphql": "^16.11.0",
+    "graphql-yoga": "^3.9.1",
     "openai": "^4.98.0",
     "wrangler": "^4.14.4"
   }
