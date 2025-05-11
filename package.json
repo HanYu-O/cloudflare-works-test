@@ -3,10 +3,12 @@
   "version": "1.0.0",
   "description": "test cloudflare works",
   "main": "index.js",
+  "packageManager": "yarn@4.5.0",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler publish",
-    "init": "wrangler init"
+    "init": "wrangler init",
+    "build": "yarn install"
   },
   "repository": {
     "type": "git",
