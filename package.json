@@ -1,0 +1,31 @@
+{
+  "name": "cloudflare-works-test",
+  "version": "1.0.0",
+  "description": "test cloudflare works",
+  "main": "index.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler publish",
+    "init": "wrangler init"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HanYu-O/cloudflare-works-test.git"
+  },
+  "keywords": [
+    "cloudflare",
+    "works"
+  ],
+  "author": "hanyu-o",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HanYu-O/cloudflare-works-test/issues"
+  },
+  "homepage": "https://github.com/HanYu-O/cloudflare-works-test#readme",
+  "devDependencies": {
+    "@graphql-yoga/common": "^3.9.1",
+    "graphql": "^16.11.0",
+    "openai": "^4.98.0",
+    "wrangler": "^4.14.4"
+  }
+}

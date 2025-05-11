@@ -1,0 +1,8 @@
+name = "cloudflare-works-test"
+main = "src/handler.ts"
+compatibility_date = "2023-01-01"
+
+[vars]
+OPENROUTER_API_KEY = ""  # 开发时的默认值
+APP_REFERER = ""  # 你的域名
+APP_TITLE = ""    # 你的应用名称

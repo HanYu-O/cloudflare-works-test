@@ -134,3 +134,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Cloudflare Workers development
+.dev.vars
+wrangler.toml
+.cursorignore
