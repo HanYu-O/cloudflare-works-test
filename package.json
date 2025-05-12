@@ -2,12 +2,11 @@
   "name": "cloudflare-works-test",
   "version": "1.0.0",
   "description": "test cloudflare works",
-  "main": "index.js",
-  "packageManager": "yarn@4.5.0",
+  "main": "src/handler.ts",
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "build": "yarn install",
+    "build": "npm install",
     "init": "wrangler init"
   },
   "repository": {
