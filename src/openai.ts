@@ -22,7 +22,7 @@ export class OpenAIService {
 
   async createChatStream(message: string) {
     const stream = await this.client.chat.completions.create({
-      model: 'openai/gpt-3.5-turbo', // OpenRouter 的模型标识符
+      model: 'google/gemini-2.5-flash-preview', // OpenRouter 的模型标识符
       messages: [{ role: 'user', content: message }],
       stream: true,
     });

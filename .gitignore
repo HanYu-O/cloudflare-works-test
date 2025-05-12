@@ -140,3 +140,9 @@ dist
 wrangler.toml.example
 wrangler.toml
 .cursorignore
+
+# 添加 Cloudflare Workers 的临时文件
+.wrangler/
+.wrangler/state/
+.wrangler/cache/
+.wrangler/tmp/
