@@ -52,13 +52,13 @@ const yoga = createYoga({
 export default {
   fetch: (request: Request, env: any, ctx: any) => {
     // 清理请求头
-    const sanitizedRequest = sanitizeHeaders(request);
+    // const sanitizedRequest = sanitizeHeaders(request);
     
     // 将环境变量附加到请求对象
-    (sanitizedRequest as any).env = env;
+    (request as any).env = env;
 
     // 处理 OPTIONS 请求
-    if (sanitizedRequest.method === 'OPTIONS') {
+    if (request.method === 'OPTIONS') {
       return new Response(null, {
         status: 204,
         headers: {
@@ -70,6 +70,6 @@ export default {
       });
     }
 
-    return yoga.fetch(sanitizedRequest, { env, ctx });
+    return yoga.fetch(request, { env, ctx });
   },
 };
