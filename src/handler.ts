@@ -5,7 +5,6 @@ import { resolvers } from './resolvers';
 // 清理请求头中的IP信息
 function sanitizeHeaders(request: Request): Request {
   const newHeaders = new Headers(request.headers);
-  console.log(newHeaders);
   // 移除可能暴露IP的请求头
   const sensitiveHeaders = [
     'x-forwarded-for',
@@ -17,7 +16,7 @@ function sanitizeHeaders(request: Request): Request {
   ];
   
   sensitiveHeaders.forEach(header => {
-    newHeaders.set(header, '127.0.0.1');
+    newHeaders.delete(header);
   });
   
   // 创建新的请求对象，保持原有的配置但使用新的headers
@@ -70,7 +69,7 @@ export default {
         },
       });
     }
-    
+
     return yoga.fetch(sanitizedRequest, { env, ctx });
   },
 };
